@@ -3,7 +3,11 @@ import Svg from "../Svg";
 import { SvgProps } from "../types";
 
 const Icon: React.FC<SvgProps> = (props) => {
-  return <img src="https://raw.githubusercontent.com/casweeney/Polygon-4SOS/main/logo.png" alt="Fooswap" />;
+  return (
+    <Svg viewBox="0 0 32 32" {...props}>
+      <image href="/favicon.png" width="32"></image>
+    </Svg>
+  );
 };
 
 export default Icon;
